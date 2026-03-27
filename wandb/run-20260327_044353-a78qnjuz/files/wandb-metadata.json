@@ -1,0 +1,36 @@
+{
+  "os": "Windows-11-10.0.26200-SP0",
+  "python": "CPython 3.13.5",
+  "startedAt": "2026-03-27T10:43:53.712940Z",
+  "program": "D:\\617 project\\yolo_training.py",
+  "codePath": "yolo_training.py",
+  "codePathLocal": "yolo_training.py",
+  "email": "johnzhou.engineer@gmail.com",
+  "root": "D:\\617 project",
+  "host": "John-desktop",
+  "executable": "C:\\Users\\john2\\anaconda3\\python.exe",
+  "cpu_count": 12,
+  "cpu_count_logical": 20,
+  "gpu": "NVIDIA GeForce RTX 3060",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "1000186310656",
+      "used": "222516805632"
+    }
+  },
+  "memory": {
+    "total": "34105610240"
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 3060",
+      "memoryTotal": "12884901888",
+      "cudaCores": 3584,
+      "architecture": "Ampere",
+      "uuid": "GPU-37607ac6-b440-6c4b-2efa-778194f53120"
+    }
+  ],
+  "cudaVersion": "13.0",
+  "writerId": "jobcg4x5k4kh0dip4kgvpct0yip2sztz"
+}

@@ -4,10 +4,6 @@ processed_data/
 raw_data/
 yolo_data_set/
 
-# ==== YOLO outputs ====
-
-runs/
-wandb/
 
 # ==== Python cache ====
 

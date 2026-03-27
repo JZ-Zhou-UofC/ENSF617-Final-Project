@@ -1,0 +1,1 @@
+{"_wandb":{"runtime":513},"test/recall":0.8983115322781674,"_timestamp":1.7746087505840402e+09,"AP50/crosswalk":0.9226472148541114,"_runtime":513,"test/precision":0.9653555267471804,"AP50/trafficlight":0.7583781132075472,"AP50/stop":0.995,"_step":4,"test/mAP50":0.9177563320154147,"AP50/speedlimit":0.995,"test/mAP50-95":0.7887506081344304}
