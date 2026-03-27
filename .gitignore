@@ -1,0 +1,46 @@
+# ==== Your dataset folders ====
+
+processed_data/
+raw_data/
+yolo_data_set/
+
+# ==== YOLO outputs ====
+
+runs/
+wandb/
+
+# ==== Python cache ====
+
+**pycache**/
+*.pyc
+*.pyo
+*.pyd
+
+# ==== Virtual environments ====
+
+venv/
+.env/
+.venv/
+
+# ==== Jupyter ====
+
+.ipynb_checkpoints/
+
+# ==== OS files ====
+
+.DS_Store
+Thumbs.db
+
+# ==== Logs ====
+
+*.log
+
+# ==== Large files (optional) ====
+
+*.pt
+*.onnx
+
+# ==== IDE ====
+
+.vscode/
+.idea/

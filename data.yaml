@@ -1,0 +1,11 @@
+path: D:/617 project/yolo_data_set
+
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: speedlimit
+  1: crosswalk
+  2: trafficlight
+  3: stop
