@@ -4,7 +4,7 @@ processed_data/
 raw_data/
 yolo_data_set/
 
-
+inference/
 # ==== Python cache ====
 
 **pycache**/
