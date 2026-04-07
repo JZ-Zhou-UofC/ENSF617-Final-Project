@@ -40,3 +40,8 @@ Thumbs.db
 
 .vscode/
 .idea/
+
+*.pth
+wandb/
+*.jsonl
+*.json

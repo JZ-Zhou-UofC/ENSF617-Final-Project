@@ -3,9 +3,9 @@ import cv2
 from pathlib import Path
 
 # ===== CONFIG =====
-IMAGE_DIR = Path("inference/filtered/images")
-LABEL_DIR = Path("inference/filtered/labels")
-OUTPUT_DIR = Path("inference/visualized")
+IMAGE_DIR = Path("inference/filtered_new/images")
+LABEL_DIR = Path("inference/filtered_new/labels")
+OUTPUT_DIR = Path("inference/visualized_new")
 
 CLASS_NAMES = {
     0: "speedlimit",

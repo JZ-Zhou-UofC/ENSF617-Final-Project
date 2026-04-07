@@ -3,10 +3,10 @@ import shutil
 from pathlib import Path
 
 # ===== CONFIG =====
-IMAGE_DIR = Path("inference/images_resized")
+IMAGE_DIR = Path("inference/images")
 LABEL_DIR = Path("inference/labels_yolo")
 
-OUTPUT_DIR = Path("inference/filtered")
+OUTPUT_DIR = Path("inference/filtered_new")
 OUT_IMG_DIR = OUTPUT_DIR / "images"
 OUT_LBL_DIR = OUTPUT_DIR / "labels"
 
