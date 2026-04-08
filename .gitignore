@@ -45,3 +45,5 @@ Thumbs.db
 wandb/
 *.jsonl
 *.json
+faster_R_CNN/
+runs/
