@@ -47,3 +47,4 @@ wandb/
 *.json
 faster_R_CNN/
 runs/
+cleaned_up/
