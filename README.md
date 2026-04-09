@@ -10,6 +10,8 @@ The goal is to improve **out-of-distribution (OOD) generalization** by combining
 The system uses:
 - DatasetNinja → training dataset
 - Mapillary → OOD evaluation dataset
+  
+NB: Training was done on a local Nvidia RTX GPU
 
 ---
 
