@@ -1,4 +1,4 @@
-# Cross-Dataset Road Sign Detection (YOLO → Faster R-CNN Pipeline)
+# Cross-Dataset Road Sign Detection for ADAS:A YOLOv8 and Faster R-CNN Evaluation Pipeline with Out-of-Distribution Generalization Assessment
 
 ## 📌 Overview
 This project implements a **cross-dataset object detection pipeline** for road sign detection in ADAS systems.
