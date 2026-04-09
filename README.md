@@ -11,7 +11,7 @@ The system uses:
 - DatasetNinja → training dataset
 - Mapillary → OOD evaluation dataset
   
-NB: Training was done on a local Nvidia RTX GPU
+**Note:** Training was performed locally on an NVIDIA GeForce RTX 3060 GPU.
 
 ---
 
