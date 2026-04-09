@@ -208,6 +208,18 @@ def train_model(train_loader, val_loader, epochs=15):
     return model
 ```
 
+## Purpose of trained YOLO model
+
+In this project, YOLO is not the final model being evaluated — it is mainly used as a tool to assist the pipeline.
+The main purpose for yolo is for candidate detection for pseudo labeling for FRCNN model.
+YOLO is used to scan Mapillary images and find where road signs exist.  
+YOLO runs inference on Mapillary (unseen dataset)
+It identifies images that likely contain: speed limits, stop signs, traffic lights and crosswalks
+This helps avoid manually searching thousands of images
+
+![ Representative YOLO predictions on Mapillary images used for
+OOD test set candidate selection](pitcures/yolo_pred.png)
+
 
 ## Model Testing
 
@@ -221,12 +233,16 @@ Results show that both models experience a drop in performance under OOD conditi
 Testing the model on data similar to what it was trained on
 Dataset: DatasetNinja
 
+![FRCNN Model Confusion Matrix on Ninja Dataset](pitcures/CM_FRCNN_Nnnja.png)
 
-2. OUT-OF-DISTRIBUTION (OOD) TESTING (Mapillary)
+
+3. OUT-OF-DISTRIBUTION (OOD) TESTING (Mapillary)
 Testing on completely different data the model has NEVER seen
 
 Dataset: Mapillary Traffic Sign Dataset
 Images: 100 manually selected samples
+
+![FRCNN Model Confusion Matrix on Mapillary Dataset](pitcures/CM_FRCNN_Mapillary.png)
 
 
 ## Evaluation Metrics
@@ -234,6 +250,14 @@ The performance of the Faster R-CNN model was evaluated using precision, recall,
 
 On the in-distribution dataset, the model achieved very high precision (~0.93) and recall (~0.95), resulting in an F1-score of approximately 0.94 and accuracy of ~0.89. This indicates that the model is highly effective at correctly detecting road signs while minimizing both false positives and false negatives when tested on familiar data.
 
+![FRCNN Test Evaluation of Ninja Dataset](pitcures/frcnn_test_on_ninja_dataset_unseen_data_result_stats.png)
+
 However, when evaluated on unseen or out-of-distribution (OOD) datasets, performance declined. Precision remained relatively high (above 0.95), showing that most detected objects were correct. In contrast, recall dropped more significantly (as low as ~0.66 in some cases), indicating that the model failed to detect a notable number of true objects. This led to a lower F1-score (~0.78) and reduced accuracy (~0.64), highlighting the model’s sensitivity to distribution shift.
 
+![FRCNN Test Evaluation of Mapillary OOD Dataset](pitcures/frcnn_test_on_hand_picked_unseen_datas_data_result_stats.png)
+
 Overall, these metrics demonstrate that while Faster R-CNN maintains strong precision across datasets, its recall is more affected by unseen data. This suggests that the model is conservative in its predictions under OOD conditions, favoring fewer but more accurate detections. Such behavior is desirable in some contexts but may require improvement in recall for applications where missing objects is critical.
+
+
+
+
