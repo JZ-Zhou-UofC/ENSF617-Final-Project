@@ -218,7 +218,7 @@ It identifies images that likely contain: speed limits, stop signs, traffic ligh
 This helps avoid manually searching thousands of images
 
 ![ Representative YOLO predictions on Mapillary images used for
-OOD test set candidate selection](pitcures/yolo_pred.png)
+OOD test set candidate selection](pitcures/yolo_pred.jpg)
 
 
 ## Model Testing
@@ -233,7 +233,7 @@ Results show that both models experience a drop in performance under OOD conditi
 Testing the model on data similar to what it was trained on
 Dataset: DatasetNinja
 
-![FRCNN Model Confusion Matrix on Ninja Dataset](pitcures/CM_FRCNN_Nnnja.png)
+![FRCNN Model Confusion Matrix on Ninja Dataset](pitcures/CM_FRCNN_Nnnja.PNG)
 
 
 3. OUT-OF-DISTRIBUTION (OOD) TESTING (Mapillary)
@@ -242,7 +242,7 @@ Testing on completely different data the model has NEVER seen
 Dataset: Mapillary Traffic Sign Dataset
 Images: 100 manually selected samples
 
-![FRCNN Model Confusion Matrix on Mapillary Dataset](pitcures/CM_FRCNN_Mapillary.png)
+![FRCNN Model Confusion Matrix on Mapillary Dataset](pitcures/CM_FRCNN_Mapillary.PNG)
 
 
 ## Evaluation Metrics
