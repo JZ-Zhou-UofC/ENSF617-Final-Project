@@ -208,6 +208,8 @@ def train_model(train_loader, val_loader, epochs=15):
     return model
 ```
 
+
+
 ## Purpose of trained YOLO model
 
 In this project, YOLO is not the final model being evaluated — it is mainly used as a tool to assist the pipeline.
@@ -263,6 +265,7 @@ However, when evaluated on unseen or out-of-distribution (OOD) datasets, perform
 
 Overall, these metrics demonstrate that while Faster R-CNN maintains strong precision across datasets, its recall is more affected by unseen data. This suggests that the model is conservative in its predictions under OOD conditions, favoring fewer but more accurate detections. Such behavior is desirable in some contexts but may require improvement in recall for applications where missing objects is critical.
 
-
+*Figure 6: FRCNN Compute Utilization*
+![frcnn_compute_utilization](pitcures/frcnn_compute_utilization.png)
 
 
